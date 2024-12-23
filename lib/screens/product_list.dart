@@ -29,7 +29,9 @@ class ProductList extends StatelessWidget {
               return buildFilterWidgets(screenSize);
             } else if (index == 4) {
 //footer
-              return Text("Footer");
+              return SizedBox(
+                height: 10.0,
+              );
             } else {
 //products
               return buildProductListRow();
@@ -44,7 +46,9 @@ class ProductList extends StatelessWidget {
       width: screenSize.width,
       child: Card(
         child: Container(
+          padding: EdgeInsets.symmetric(vertical: 12.0),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               buildFilterButton("Order"),
               Container(
@@ -62,6 +66,12 @@ class ProductList extends StatelessWidget {
 
   buildFilterButton(String title) {
     return InkWell(
+      onTap: (){
+        if(title=="Order"){
+          print("sıralandı.");
+        }
+        else print("filtrelendi");
+      },
       child: Row(
         children: <Widget>[
           Icon(
