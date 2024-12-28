@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import '../widgets/size_selector.dart';
 class ProductDetailPage extends StatefulWidget {
   final String? name;
   final double? currentPrice;
@@ -76,7 +78,7 @@ class ProductDetailPageState extends State<ProductDetailPage> with TickerProvide
               SizedBox(
                 height: 10.0,
               ),
-              buildSizeArea(),
+              SizeSelector(),
               SizedBox(
                 height: 10.0,
               ),
