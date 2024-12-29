@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "933264377534",
+    "project_id": "survey-ebd2a",
+    "storage_bucket": "survey-ebd2a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933264377534:android:933dc3f6224b7ae9a4c0ef",
+        "android_client_info": {
+          "package_name": "com.example.ecommerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfpM_kaDw6i4KtltxFupHoHM4pSZmRf0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

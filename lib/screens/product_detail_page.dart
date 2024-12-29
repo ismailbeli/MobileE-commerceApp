@@ -44,7 +44,10 @@ class ProductDetailPageState extends State<ProductDetailPage> with TickerProvide
         ),
         backgroundColor: Colors.white,
       ),
-      body: buildProductDetails(context),
+      body:
+
+      buildProductDetails(context),
+      backgroundColor: Colors.white,
       bottomNavigationBar: buildButtomNavigationBar(),
     );
   }
@@ -106,7 +109,7 @@ class ProductDetailPageState extends State<ProductDetailPage> with TickerProvide
         decoration: BoxDecoration(
           boxShadow: [
             BoxShadow(
-              color: Colors.blueGrey.withOpacity(0.1), // Gölgenin rengi
+              color: Colors.white, // Gölgenin rengi
               spreadRadius: 2, // Yayılma yarıçapı
               blurRadius: 5, // Bulanıklık yarıçapı
               offset: Offset(4, 4), // X ve Y ekseninde gölge kaydırması
@@ -124,7 +127,7 @@ class ProductDetailPageState extends State<ProductDetailPage> with TickerProvide
                   controller: imagesController,
                   children: [
                     Image.network(
-                        "https://pics.clipartpng.com/midle/Red_Sweatshirt_PNG_Clip_Art-2348.png"),
+                        "${widget.imageUrl}"),
                     Image.network(
                         "https://pics.clipartpng.com/midle/Blue_Sweatshirt_PNG_Clip_Art-2350.png"),
                     Image.network(

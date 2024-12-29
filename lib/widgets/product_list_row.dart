@@ -16,7 +16,9 @@ class ProductListRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
+        SizedBox(width: 8,),
         buildProductItemCard(context),
+        SizedBox(width: 5,),
         buildProductItemCard(context),
       ],
     );
@@ -36,6 +38,7 @@ class ProductListRow extends StatelessWidget {
         ));
       },
       child: Card(
+        color: Colors.white,
         child: Column(
           children: <Widget>[
             Container(
